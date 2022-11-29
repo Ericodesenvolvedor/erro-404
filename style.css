@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --fs-body: 1.6rem;
+    --fs-heading: 1.7rem;
+    --fs-anchor: 1.2rem;
+
+    --ff-heading: 'Rubik', sans-serif;
+    --ff-anchor: 'Poppins', sans-serif;;
+        
+    --fc-heading: hsl(236, 14%, 39%);
+    --fc-anchor: hsl(24, 70%, 14%);
+    --bg-anchor: hsl(23, 96%, 59%);
+    --bg-anchor-hover: hsl(23, 82%, 74%);
+}
+
+body {
+    padding: 0 1rem;
+    width: 100%;
+    height: 100vh;
+    font-size: var(--fs-body);
+
+    background-image: url("./images/background-branco-com-faiscas.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+main {
+    text-align: center;
+}
+
+main img {
+    width: 90%;
+    margin-bottom: 15.2rem;
+}
+
+main h2 {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-heading);
+    font-weight: 600;
+    color: var(--fc-heading);
+
+    line-height: 3.4rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    margin-bottom: 4.7rem;
+}
+
+main a {
+    width: fit-content;
+    padding: 1.2rem 4.2rem;
+    box-shadow: -15px 15px 20px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-anchor);
+    border-radius: 3rem;
+
+    font-family: var(--ff-anchor);
+    font-size: var(--fs-anchor);
+    color: var(--fc-anchor);
+    text-transform: uppercase;
+    text-decoration: none;
+    
+
+    display: block;
+    margin: 0 auto;
+}
+
+main a:hover {
+    background-color: var(--bg-anchor-hover);
+}
+
+@media screen and (min-width: 700px) {
+    :root {
+        --fs-heading: 2.5rem;
+        --fs-anchor: 1.4rem;
+    }
+}
